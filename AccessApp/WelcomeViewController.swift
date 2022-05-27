@@ -13,6 +13,9 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    private let login = "user"
+    private let password = "password"
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,11 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func logInButtonPressed() {
-        
+        guard
+            loginTF.text == login && passwordTF.text == password
+        else {
+            return showAlert(title: "Login or password is invalid", message: "look help")
+        }
     }
     
     @IBAction func forgotLoginButtonPressed() {
@@ -32,9 +39,13 @@ class WelcomeViewController: UIViewController {
         showAlert(title: "Password is invalid", message: "True password is password")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let settingsVC = segue.destination as? SettingsViewController else { return }
+        settingsVC.welcome = login
+    }
 }
 
-// MARK: - Private methods 
+// MARK: - Private methods
 extension WelcomeViewController {
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(

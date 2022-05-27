@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="-696" y="-25"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="h3T-G9-jeX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Dek-bT-mvr" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Dek-bT-mvr" customClass="SettingsViewController" customModule="AccessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6yA-mD-ejW">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +127,9 @@
                             <constraint firstItem="Gsc-mO-vb3" firstAttribute="centerX" secondItem="6yA-mD-ejW" secondAttribute="centerX" id="eom-D3-shs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="OxQ-g1-4A6" id="2AE-3u-zJN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rr-3u-PYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
