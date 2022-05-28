@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    // MARK: - Model
     private let user = User.getInfo()
     
     // MARK: - Navigation
@@ -26,23 +27,20 @@ class LoginViewController: UIViewController {
         guard
             loginTF.text == user.login && passwordTF.text == user.password
         else {
-            return showAlert(title: "Login or password is invalid", message: "look help")
+            return showAlert(title: "Login or password is invalid", message: "Please enter correct")
         }
     }
-    
-    @IBAction func forgotLoginButtonPressed() {
-        showAlert(title: "Login is invalid", message: "True login is user")
-    }
-    
-    @IBAction func forgotPasswordButtonPressed() {
-        showAlert(title: "Password is invalid", message: "True password is password")
+ 
+    @IBAction func forgotButtonsPressed(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(title: "Login is invalid", message: "True login is user")
+        : showAlert(title: "Password is invalid", message: "True password is password")
     }
     
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         loginTF.text = String()
         passwordTF.text = String()
     }
-    
 }
 
 // MARK: - Alert controller
@@ -62,6 +60,7 @@ extension LoginViewController {
     }
 }
 
+// MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -77,6 +76,4 @@ extension LoginViewController: UITextFieldDelegate {
         }
         return true
     }
-    
 }
-
