@@ -170,10 +170,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x2Q-rh-GFY"/>
+                    <connections>
+                        <outlet property="profilePhoto" destination="W4d-3a-aPp" id="0sH-DI-zsp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ta-uS-UfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204.67289719626166" y="257.8833693304536"/>
+            <point key="canvasLocation" x="154" y="258"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G7a-t2-PdT">
