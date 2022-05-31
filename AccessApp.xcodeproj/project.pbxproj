@@ -15,6 +15,7 @@
 		F37550BE283F90B00098F5A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37550BC283F90B00098F5A5 /* Main.storyboard */; };
 		F37550C0283F90B00098F5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37550BF283F90B00098F5A5 /* Assets.xcassets */; };
 		F37550C3283F90B00098F5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37550C1283F90B00098F5A5 /* LaunchScreen.storyboard */; };
+		F3A86693284602C20071F349 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A86692284602C20071F349 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F37550BF283F90B00098F5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F37550C2283F90B00098F5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F37550C4283F90B00098F5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A86692284602C20071F349 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				F37550BA283F90B00098F5A5 /* LoginViewController.swift */,
 				F36897192840B5C000630B45 /* WelcomeViewController.swift */,
+				F3A86692284602C20071F349 /* AboutMeViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				F37550BB283F90B00098F5A5 /* LoginViewController.swift in Sources */,
 				F37550B7283F90B00098F5A5 /* AppDelegate.swift in Sources */,
 				F37550B9283F90B00098F5A5 /* SceneDelegate.swift in Sources */,
+				F3A86693284602C20071F349 /* AboutMeViewController.swift in Sources */,
 				F368971A2840B5C000630B45 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
