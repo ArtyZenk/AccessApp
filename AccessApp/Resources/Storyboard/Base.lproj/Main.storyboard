@@ -136,7 +136,7 @@
                             <constraint firstItem="Gsc-mO-vb3" firstAttribute="centerX" secondItem="6yA-mD-ejW" secondAttribute="centerX" id="eom-D3-shs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Gvd-G5-8F0"/>
+                    <tabBarItem key="tabBarItem" selectedImage="person.crop.circle.fill" catalog="system" systemItem="favorites" id="Gvd-G5-8F0"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="OxQ-g1-4A6" id="2AE-3u-zJN"/>
                     </connections>
@@ -183,7 +183,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wxb-FY-6OX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ba-m8-ksg">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="square.and.arrow.up" catalog="system" id="6ba-m8-ksg">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,11 +197,11 @@
             </objects>
             <point key="canvasLocation" x="-1192" y="-463"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="3a3-RX-isf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mLS-KE-1Q8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="k95-uC-scD"/>
+                    <tabBarItem key="tabBarItem" selectedImage="doc.append" catalog="system" systemItem="more" id="k95-uC-scD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="t9C-JZ-XKx">
                         <rect key="frame" x="0.0" y="44" width="428" height="96"/>
@@ -218,6 +218,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc.append" catalog="system" width="115" height="128"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
