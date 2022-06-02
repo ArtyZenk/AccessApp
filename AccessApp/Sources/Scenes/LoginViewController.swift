@@ -24,10 +24,10 @@ class LoginViewController: UIViewController {
         
         viewControllers.forEach {
             if let welcomeVC = $0 as? WelcomeViewController {
-                welcomeVC.user = user.login
+                welcomeVC.user = user
             } else if let navigationVC = $0 as? UINavigationController {
                 let aboutMeVC = navigationVC.topViewController as? AboutMeViewController
-                aboutMeVC?.user = user.photoName
+                aboutMeVC?.user = user
             }
         }
     }
